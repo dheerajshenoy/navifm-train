@@ -1,0 +1,79 @@
+{"prompt": "List all runtime paths.", "response": "navi.api.list_runtime_paths()"}
+{"prompt": "Create a custom user command named 'backup'.", "response": "navi.api.create_user_command('backup', function() ... end)"}
+{"prompt": "Remove the user command 'backup'.", "response": "navi.api.remove_user_command('backup')"}
+{"prompt": "List all registered functions.", "response": "navi.api.list_registered_functions()"}
+{"prompt": "Rotate the preview image by 90 degrees.", "response": "navi.api.rotate_preview_image(90)"}
+{"prompt": "Take a screenshot and save it as 'screenshot.png'.", "response": "navi.api.screenshot('screenshot.png')"}
+{"prompt": "Sort items by name.", "response": "navi.api.sort_name()"}
+{"prompt": "Count the number of items in the current directory.", "response": "navi.api.count()"}
+{"prompt": "Search for files with the name 'report'.", "response": "navi.api.search('report')"}
+{"prompt": "Select the next item in the list.", "response": "navi.api.next_item()"}
+{"prompt": "Select the previous item in the list.", "response": "navi.api.prev_item()"}
+{"prompt": "Select the first item in the list.", "response": "navi.api.first_item()"}
+{"prompt": "Select the last item in the list.", "response": "navi.api.last_item()"}
+{"prompt": "Select the middle item in the list.", "response": "navi.api.middle_item()"}
+{"prompt": "Select the item named 'document.txt'.", "response": "navi.api.select_item('document.txt')"}
+{"prompt": "Get the name of the currently selected item.", "response": "navi.api.item_name()"}
+{"prompt": "Get the 'size' property of the selected item.", "response": "navi.api.item_property('size')"}
+{"prompt": "Navigate to the parent directory.", "response": "navi.api.parent_dir()"}
+{"prompt": "Mount the drive '/dev/sdb1' to '/mnt/usb'.", "response": "navi.api.mount_drive('/dev/sdb1', '/mnt/usb')"}
+{"prompt": "Unmount the drive '/dev/sdb1'.", "response": "navi.api.unmount_drive('/dev/sdb1')"}
+{"prompt": "Search for the next occurrence of the term 'data'.", "response": "navi.api.search_next('data')"}
+{"prompt": "Search for the previous occurrence of the term 'data'.", "response": "navi.api.search_prev('data')"}
+{"prompt": "Check if 'example.txt' is a file.", "response": "navi.api.is_file('example.txt')"}
+{"prompt": "Check if 'Documents' is a directory.", "response": "navi.api.is_dir('Documents')"}
+{"prompt": "Create a new file named 'newfile.txt'.", "response": "navi.api.create_file('newfile.txt')"}
+{"prompt": "Create a new directory named 'NewFolder'.", "response": "navi.api.create_dir('NewFolder')"}
+{"prompt": "Move 'oldfile.txt' to trash.", "response": "navi.api.trash('oldfile.txt')"}
+{"prompt": "Move selected items to trash.", "response": "navi.api.trash_dwim()"}
+{"prompt": "Copy selected items.", "response": "navi.api.copy()"}
+{"prompt": "Copy selected items (do what I mean).", "response": "navi.api.copy_dwim()"}
+{"prompt": "Cut selected items.", "response": "navi.api.cut()"}
+{"prompt": "Cut selected items (do what I mean).", "response": "navi.api.cut_dwim()"}
+{"prompt": "Check if there are any local marks.", "response": "navi.api.has_marks_local()"}
+{"prompt": "Check if there are any global marks.", "response": "navi.api.has_marks_global()"}
+{"prompt": "Get a list of global marks.", "response": "navi.api.global_marks()"}
+{"prompt": "Get the count of local marks.", "response": "navi.api.local_marks_count()"}
+{"prompt": "Get the count of global marks.", "response": "navi.api.global_marks_count()"}
+{"prompt": "Get a list of local marks.", "response": "navi.api.local_marks()"}
+{"prompt": "Highlight the item 'example.txt'.", "response": "navi.api.highlight('example.txt')"}
+{"prompt": "Change directory to '/home/user/Documents'.", "response": "navi.api.cd('/home/user/Documents')"}
+{"prompt": "Print the current working directory.", "response": "navi.api.pwd()"}
+{"prompt": "Apply a filter to show only '.txt' files.", "response": "navi.api.filter('*.txt')"}
+{"prompt": "Reset all applied filters.", "response": "navi.api.reset_filter()"}
+{"prompt": "Mark the selected item.", "response": "navi.api.mark()"}
+{"prompt": "Invert the current selection of items.", "response": "navi.api.mark_inverse()"}
+{"prompt": "Mark all items in the current directory.", "response": "navi.api.mark_all()"}
+{"prompt": "Mark items (do what I mean).", "response": "navi.api.mark_dwim()"}
+{"prompt": "Unmark the selected item.", "response": "navi.api.unmark()"}
+{"prompt": "Unmark items (do what I mean).", "response": "navi.api.unmark_dwim()"}
+{"prompt": "Toggle mark on the selected item.", "response": "navi.api.toggle_mark()"}
+{"prompt": "Toggle mark on items (do what I mean).", "response": "navi.api.toggle_mark_dwim()"}
+{"prompt": "Rename 'oldname.txt' to 'newname.txt'.", "response": "navi.api.rename('oldname.txt', 'newname.txt')"}
+{"prompt": "Rename selected items (do what I mean).", "response": "navi.api.rename_dwim()"}
+{"prompt": "Delete 'unwantedfile.txt'.", "response": "navi.api.delete('unwantedfile.txt')"}
+{"prompt": "Delete selected items (do what I mean).", "response": "navi.api.delete_dwim()"}
+{"prompt": "Change permissions of 'script.sh' to executable.", "response": "navi.api.chmod('script.sh', '755')"}
+{"prompt": "Execute the command 'ls -la'.", "response": "navi.api.spawn('ls -la')"}
+{"prompt": "Set the terminal to alacritty", "response": "navi.opt.terminal = 'alacritty'"}
+{"prompt": "Change the terminal to ghostty", "response": "navi.opt.terminal = 'ghostty'"}
+{"prompt": "What is the current terminal?", "response": "print(navi.opt.terminal)"}
+{"prompt": "Set the default directory when opening navifm to <dir_path>", "response": "navi.opt.default_directory = '<dir_path>'"}
+{"prompt": "Show hidden files by default", "response" : "navi.opt.hidden_files = true"}
+{"prompt": "Hide the file panel.", "response": "navi.ui.file_panel.visible = false"}
+{"prompt": "Show icons in the file panel.", "response": "navi.ui.file_panel.icons = true"}
+{"prompt": "Disable the grid in the file panel.", "response": "navi.ui.file_panel.grid = false"}
+{"prompt": "Change grid style to dashed lines.", "response": "navi.ui.file_panel.gridstyle = \"dashline\""}
+{"prompt": "Set file panel font size to 20.", "response": "navi.ui.file_panel.font_size = 20"}
+{"prompt": "Toggle preview panel.", "response": "navi.ui.preview_panel.toggle()"}
+{"prompt": "Change preview panel image size to 800x600.", "response": "navi.ui.preview_panel.image_dimension = { width = 800, height = 600 }"}
+{"prompt": "Toggle the path bar.", "response": "navi.ui.pathbar.toggle()"}
+{"prompt": "Make the statusbar visible.", "response": "navi.ui.statusbar.visible = true"}
+{"prompt": "Create a statusbar module named 'custom' with red background.", "response": "navi.ui.statusbar.create_module(\"custom\", { text = \"HELLO\", background = \"#FF0000\"})"}
+{"prompt": "Set the modules for the status bar to display file name and size.", "response": "navi.ui.statusbar.set_modules({\"name\", \"size\"})"}
+{"prompt": "Add a button to the toolbar with label 'Print' and printer icon.", "response": "navi.ui.toolbar.create_button(\"print_button\", { label = \"Print\", icon = \"printer\", action = function () print(\"Printing...\") end })"}
+{"prompt": "Toggle the menubar.", "response": "navi.ui.menubar.toggle()"}
+{"prompt": "Set the cursor color to blue.", "response": "navi.ui.cursor.foreground = \"blue\""}
+{"prompt": "Bold the text under the cursor.", "response": "navi.ui.cursor.bold = true"}
+{"prompt": "Make the header invisible.", "response": "navi.ui.header.visible = false"}
+{"prompt": "Set header columns to show file names and sizes.", "response": "navi.ui.header.columns = { { name = \"File\", type = \"file_name\"}, { name = \"Size\", type = \"file_size\"} }"}
